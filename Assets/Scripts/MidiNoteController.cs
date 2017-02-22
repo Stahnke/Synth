@@ -21,7 +21,7 @@ public class MidiNoteController : MonoBehaviour {
         SendStop();
         print("Midi note: " + midi_note);
         float frequency = MFConverter.mtof(midi_note);
-        SendFreq(frequency / 200);
+        SendFreq(frequency); //Divid by 200 for sampling TODO
     }
 
     public void SendStopNote()

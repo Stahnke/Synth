@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioOut : AudioClipReceiver {
+public class AudioOut : AudioClipReceiver
+{
 
     private AudioSource aud;
+
+    public float approxSecondsToFade = 0.020f;
 
     public override void ReceiveAudioClip(AudioClip audioClip)
     {
@@ -17,7 +20,9 @@ public class AudioOut : AudioClipReceiver {
 
     public override void ReceiveStop()
     {
-        if(audioClip != null)
+        if (audioClip != null)
+        {
             aud.Stop();
+        }
     }
 }

@@ -112,6 +112,7 @@
     <Compile Include="Assets\Scripts\AudioClipReceiver.cs" />
     <Compile Include="Assets\Scripts\AudioOut.cs" />
     <Compile Include="Assets\Scripts\AudioWaveFormVisualizer.cs" />
+    <Compile Include="Assets\Scripts\DestroyOnCollision.cs" />
     <Compile Include="Assets\Scripts\FreqReceiver.cs" />
     <Compile Include="Assets\Scripts\MFConverter.cs" />
     <Compile Include="Assets\Scripts\MidiNoteController.cs" />
