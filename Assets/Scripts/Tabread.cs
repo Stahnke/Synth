@@ -24,10 +24,20 @@ public class Tabread : AudioClipReceiver
 
         audioClip.GetData(phasor_data, 0);
 
+        float max_value = 0;
+        float max_newvalue = 0;
         for (int i = 0; i < phasor_data.Length; i++)
         {
-            phasor_data[i] *= 44100;
+            if (phasor_data[i] > max_value)
+            max_value = phasor_data[i];
+            phasor_data[i] *= sample_data.Length - 1;
+            if (phasor_data[i] > max_newvalue)
+                max_newvalue = phasor_data[i];
         }
+
+        print("MAXVALUE: " + max_value);
+        print("MAXNEWVALUE: " + max_newvalue);
+        print("Output Data Length: " + output_data.Length);
         ReadTab();
     }
 
