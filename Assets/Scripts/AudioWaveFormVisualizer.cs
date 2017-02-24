@@ -2,7 +2,6 @@
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
-[RequireComponent(typeof(GUITexture))]
 public class AudioWaveFormVisualizer : MonoBehaviour
 {
 

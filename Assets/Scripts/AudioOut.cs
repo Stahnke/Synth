@@ -7,8 +7,6 @@ public class AudioOut : AudioClipReceiver
 
     private AudioSource aud;
 
-    public float approxSecondsToFade = 0.020f;
-
     public override void ReceiveAudioClip(AudioClip audioClip)
     {
         base.ReceiveAudioClip(audioClip);

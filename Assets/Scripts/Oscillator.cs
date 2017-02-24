@@ -67,6 +67,7 @@ public class Oscillator : FreqReceiver
                 return (Mathf.Sin(2 * Mathf.PI * frequency * position / samplerate));
             case SAWTOOTH_WAVE:
                 return ((frequency * position / samplerate) % 1);
+                //return Mathf.Atan(1 / Mathf.Tan(0.0f));
             case SQUARE_WAVE:
                 return Mathf.Sign(Mathf.Sin(2 * Mathf.PI * frequency * position / samplerate));
             case TRIANGLE_WAVE:

@@ -19,7 +19,7 @@ public class Tabread : AudioClipReceiver
         base.ReceiveAudioClip(audioClip);
 
         phasor_data = new float[audioClip.samples * audioClip.channels];
-        sample_data = new float[sample.samples * sample.channels];
+        sample_data = new float[sample.samples * sample.channels / 2];
         output_data = new float[audioClip.samples * audioClip.channels];
 
         audioClip.GetData(phasor_data, 0);

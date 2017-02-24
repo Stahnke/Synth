@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -69,9 +66,6 @@
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
@@ -117,9 +111,11 @@
     <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
     <Compile Include="Assets\Scripts\AudioClipReceiver.cs" />
     <Compile Include="Assets\Scripts\AudioOut.cs" />
+    <Compile Include="Assets\Scripts\AudioVisualizer.cs" />
     <Compile Include="Assets\Scripts\AudioWaveFormVisualizer.cs" />
     <Compile Include="Assets\Scripts\DestroyOnCollision.cs" />
     <Compile Include="Assets\Scripts\FreqReceiver.cs" />
+    <Compile Include="Assets\Scripts\FreqShrink.cs" />
     <Compile Include="Assets\Scripts\MFConverter.cs" />
     <Compile Include="Assets\Scripts\MidiNoteController.cs" />
     <Compile Include="Assets\Scripts\MidiNoteKey.cs" />
